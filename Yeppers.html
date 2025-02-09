@@ -1,0 +1,96 @@
+<style>
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack elements vertically */
+
+    text-align: center;
+    background-color: pink; /* Optional: cute background */
+
+}
+  .p1{
+    color: rgb(230, 98, 98);
+    
+ }
+
+ .yes{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(219, 107, 107);
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.5s;
+  border: none;
+
+
+ }
+
+ .yes:hover{
+  background-color: rgb(175, 47, 47);
+
+ }
+
+ .no{
+  
+  
+  
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(219, 107, 107);
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: absolute;
+  border: none;
+  margin-left:  100px;
+ }
+  .yes {
+    margin-right: 100px;
+  }
+  .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Center the buttons */
+            gap: 30px; /* Space between buttons */
+            margin-top: 20px;
+  }
+
+ 
+
+ 
+ 
+
+</style>
+
+<head>
+<p class="p1">
+  You lab me?
+</p>
+</head>
+
+<img src="images (1).jpg" class="image">
+
+<div class="button-container">
+  <button class="yes" onclick="handleYesClick()">Yes</button>
+  <button class="no" id="noButton" onmouseover="moveButton()">No</button>
+</div>
+
+<script>
+function moveButton() {
+  let button = document.getElementById("noButton");
+  let x = Math.random() * (window.innerWidth - 100);
+  let y = Math.random() * (window.innerHeight - 50);
+  button.style.left = x + "px";
+  button.style.top = y + "px";
+}
+</script>
+
+<script>
+  function handleYesClick() {
+    alert('hehehe');
+    window.open("https://www.youtube.com/@jowdds", "_blank");
+    target="_blank"
+  }
+</script>
